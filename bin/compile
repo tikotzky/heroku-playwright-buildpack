@@ -94,7 +94,6 @@ EOF
 	    ;;
 		"heroku-24")
 	    cat << EOF >>$build_tmpdir/Aptfile
-libvpx7
 libdbus-1-3
 libatk1.0-0t64
 libatk-bridge2.0-0t64
