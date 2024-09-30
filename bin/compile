@@ -35,7 +35,6 @@ install_system_deps() {
 libnspr4
 libnss3
 libxss1
-libasound2
 fonts-noto-color-emoji
 libgbm1
 libatk-bridge2.0-0
@@ -77,16 +76,19 @@ EOF
 	case "$STACK" in
 	  "heroku-18")
 	    cat << EOF >>$build_tmpdir/Aptfile
+libasound2
 libvpx5
 EOF
 	    ;;
 	  "heroku-20")
 	    cat << EOF >>$build_tmpdir/Aptfile
+libasound2
 libvpx6
 EOF
 	    ;;
 		"heroku-22")
 	    cat << EOF >>$build_tmpdir/Aptfile
+libasound2
 libvpx7
 EOF
 	    ;;
